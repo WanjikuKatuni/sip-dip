@@ -126,6 +126,11 @@ form.search_bar::after {
     max-height: 32vh;
 
 }
+#modal-img{
+    max-width: 25vw; 
+    max-height: 42vh;
+
+}
 .card {
 
     /* padding: 1.5em .5em .5em; */
@@ -156,10 +161,10 @@ button.btn{
   
 }
 
-/* ul {
+ul {
     list-style-type: none;
-} */
-.instructions {
+}
+.leftindent {
     text-align: left;
 }
 /* #polygonright{
