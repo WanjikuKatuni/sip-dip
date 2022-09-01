@@ -43,5 +43,43 @@ else{
                 ingredients.push(`${measure} ${ingredient}` )
             }
         }
+        console.log(ingredients)
+        // results
+        result.innerHTML = `
+        
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col" id="cocktailcards">
+          <div class="card border-warning">
+            <img id="card-img" src="${myDrink.strDrinkThumb}" class="card-img-top img-fluid" alt="...">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                ${myDrink.strDrink}
+              </button> 
+              <!-- modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" id="modal">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <img src="/app/images/iconmodal.png" class= "img-fluid" alt="iconmodal">
+                      <div>
+                        <h2>${myDrink.strDrink}</h2>
+                        <h5>Ingredients</h5>
+                        <ul id="ingredient-list">
+                          
+                        </ul>
+                        <p class=instructions>${myDrink.strInstructions}</p>
+                      </div>
+                    </div>                       
+                    <div class="modal-footer">
+                      <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        
+    </div>
+        `
+
     });
 }

@@ -156,8 +156,11 @@ button.btn{
   
 }
 
-ul {
+/* ul {
     list-style-type: none;
+} */
+.instructions {
+    text-align: left;
 }
 /* #polygonright{
     position:absolute;
