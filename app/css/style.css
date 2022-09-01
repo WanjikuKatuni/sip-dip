@@ -1,0 +1,71 @@
+body{
+    background-color: #c37000;
+}
+
+.alt-grid [class*="col"] {padding-left:0;padding-right:0}
+.alt-grid .row {margin-left:0;margin-right:0}
+
+/* container adjusted */
+.alt-grid .container {width:100%;max-width:none;padding:0;}
+
+.header{
+    /* background-color: #FCE9D4; */
+    /* width: 1440px; */
+    height: 300px;
+}
+
+
+/* .nav_search_section{
+    background-color: #FCE9D4;
+    width: 1440px;
+    height: 207px;
+} */
+
+
+.navbar-nav > li {
+    padding-left: 75px;
+    padding-right: 70px;
+}
+.nav_text{
+    color: #9B8665;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* Style the search field */
+form.search_bar input[type=text] {
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid #9B8665;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  height: 87px;
+  /* border-radius: 30px; */
+}
+
+/* Style the submit button */
+form.search_bar button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #F4C125;
+  color: black;
+  font-size: 30px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  height: 87px;
+  /* border-radius: 30px; */
+}
+
+form.search_bar button:hover {
+  background: #EB922A;
+}
+
+/* Clear floats */
+form.search_bar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
