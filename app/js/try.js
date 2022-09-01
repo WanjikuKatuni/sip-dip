@@ -70,6 +70,8 @@ function getSearchedDrink(strDrink){
 }
 
 
+// 
+
 //initialize
 function initialize(){
     getSearchedDrink()

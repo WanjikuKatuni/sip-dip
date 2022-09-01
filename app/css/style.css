@@ -73,7 +73,25 @@
 .navsearchrow {
     background-color: #FCE9D4;
 }
-
+[data-theme="dark"] {
+    --background-color: #3F3F3F;
+    --text-color: #fff;
+  }
+#welcometxt{
+    text-align: center;
+}
+#welcometxt > h4{
+    font-family: 'Emilys Candy';
+    font-size: 60px;
+}
+#welcometxt > h5{
+    font-family: 'Emilys Candy';
+    font-size: 30px;
+}
+#welcometxt > p{
+    font-family: 'Alegreya', serif;
+    font-size: 20px;
+}
 /* Style the search field */
 .search_bar {
   /* padding: 10px;
@@ -109,6 +127,11 @@
   font-size: 25px;
 }
 
+#searchform > input {
+    font-family: 'Emilys Candy';
+    font-size: 30px;
+}
+
 form.search_bar button:hover {
   background: #EB922A;
 }
@@ -119,6 +142,19 @@ form.search_bar::after {
   clear: both;
   display: table;
 } */
+
+button#randombtn{
+    width: 70%;
+    height: 87px;
+    border: 2px solid #9b7505;
+    background-color: #F4C125;
+    border-radius: 30px;
+    font-family: 'Emilys Candy';
+    font-size: 20px;
+
+
+    
+  }
 
 #card-img{
    
@@ -180,7 +216,12 @@ ul {
     
 } */
 
-
+#catch {
+    font-family: 'Alegreya', serif;
+    font-size: 30px;
+    text-align: center;
+    
+}
 footer {
     text-align: center;
     font-size: smaller;
