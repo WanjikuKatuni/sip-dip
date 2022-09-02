@@ -63,13 +63,13 @@ let userInput = document.getElementById('name').value;
                     </button> 
                     <!-- modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" id="modal">
-                        <div class="modal-content">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" id="modal">
+                        <div class="modal-content" style="color: #000000; line-height: 2em; font-family: 'Alegreya', serif;">
                             <div class="modal-body">
                             <img src="/app/images/iconmodal.png" class= "img-fluid" alt="iconmodal">
                             <div>
                                 <h2>${myDrink.strDrink}</h2>
-                                <img id="modal-img" src="${myDrink.strDrinkThumb}" class="img-fluid" alt="...">
+                                <img id="modal-img" src="${myDrink.strDrinkThumb}" class="img-fluid" alt="image of drink">
                                 <h5 class="leftindent">Ingredients</h5>
                                 <ul class="leftindent" id="ingredient-list">
                                 
@@ -136,43 +136,43 @@ function getRandom (){
         console.log(ingredients)
         // results
         result.innerHTML = `
-        
-                <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-2"></div>
-                <div class="col">
-                <div class="card border-warning">
-                    <img id="card-img" src="${myDrink.strDrinkThumb}" class="card-img-top img-fluid" alt="...">
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        ${myDrink.strDrink}
-                    </button> 
-                    <!-- modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" id="modal">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                            <img src="/app/images/iconmodal.png" class= "img-fluid" alt="iconmodal">
-                            <div>
-                                <h2>${myDrink.strDrink}</h2>
-                                <img id="modal-img" src="${myDrink.strDrinkThumb}" class="img-fluid" alt="...">
-                                <h5 class="leftindent">Ingredients</h5>
-                                <ul class="leftindent" id="ingredient-list">
-                                
-                                </ul>
-                                <h5 class="leftindent">Instructions</h5>
-                                <p class="leftindent">${myDrink.strInstructions}</p>
-                            </div>
-                            </div>                       
-                            <div class="modal-footer">
-                            <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                        </div>
+        <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2"></div>
+        <div class="col">
+        <div class="card border-warning">
+            <img id="card-img" src="${myDrink.strDrinkThumb}" class="card-img-top img-fluid" alt="...">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                ${myDrink.strDrink}
+            </button> 
+            <!-- modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" id="modal">
+                <div class="modal-content" style="color: #000000; line-height: 2em; font-family: 'Alegreya', serif;">
+                    <div class="modal-body">
+                    <img src="/app/images/iconmodal.png" class= "img-fluid" alt="iconmodal">
+                    <div>
+                        <h2>${myDrink.strDrink}</h2>
+                        <img id="modal-img" src="${myDrink.strDrinkThumb}" class="img-fluid" alt="image of drink">
+                        <h5 class="leftindent">Ingredients</h5>
+                        <ul class="leftindent" id="ingredient-list">
+                        
+                        </ul>
+                        <h5 class="leftindent">Instructions</h5>
+                        <p class="leftindent">${myDrink.strInstructions}</p>
+                    </div>
+                    </div>                       
+                    <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
                 </div>
-                
             </div>
+        </div>
+        </div>
+        
+    </div>
+                
         `
 
         let ingredientList = document.querySelector('#ingredient-list');
