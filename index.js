@@ -66,7 +66,7 @@ let userInput = document.getElementById('name').value;
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" id="modal">
                         <div class="modal-content" style="color: #000000; line-height: 2em; font-family: 'Alegreya', serif;">
                             <div class="modal-body">
-                            <img src="/app/images/iconmodal.png" class= "img-fluid" alt="iconmodal">
+                            <img src="/images/iconmodal.png" class= "img-fluid" alt="iconmodal">
                             <div>
                                 <h2>${myDrink.strDrink}</h2>
                                 <img id="modal-img" src="${myDrink.strDrinkThumb}" class="img-fluid" alt="image of drink">
@@ -150,7 +150,7 @@ function getRandom (){
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" id="modal">
                 <div class="modal-content" style="color: #000000; line-height: 2em; font-family: 'Alegreya', serif;">
                     <div class="modal-body">
-                    <img src="/app/images/iconmodal.png" class= "img-fluid" alt="iconmodal">
+                    <img src="/images/iconmodal.png" class= "img-fluid" alt="iconmodal">
                     <div>
                         <h2>${myDrink.strDrink}</h2>
                         <img id="modal-img" src="${myDrink.strDrinkThumb}" class="img-fluid" alt="image of drink">
