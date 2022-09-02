@@ -9,17 +9,19 @@
     <link rel="stylesheet" href="/app/css/style.css">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- bootstrap4 -->
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/css/bootstrap-switch-button.min.css" rel="stylesheet">
     <!-- icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Emilys Candy' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
     <!-- js -->
     <script defer type="text/javascript" src="/app/js/index.js"></script>
 </head>
-<body class="navsearchrow">
+<body id="body" class="lightMode">
     
    
     <div class="container-fluid">
@@ -47,8 +49,13 @@
                 </div>
             </div>
         </div>
+        <!-- switch -->
+        <br>
+        <div id="darkModeSwitch">
+          <input type="checkbox" data-toggle="switchbutton" checked data-onstyle="secondary" title="Toggle Light/Dark Mode">
+        </div>
         <!-- nav section -->
-        <div class="row navsearchrow">
+        <div class="row">
             <div class="col" id="welcometxt">
                 <br>
                 <!-- <nav class="navbar navbar-expand-lg">
@@ -83,24 +90,24 @@
                 </nav> -->
             <!-- welcome message -->
             <br>
-            <h4>Welcome to Sip and Drink.</h4>
+            <h4>Welcome to Sip and Dip.</h4>
             <h5>Home of all alcoholic and non-alcoholic cocktails</h5>
             <br><br>
             <p>When in need of a drink, just search its name or ingridients on the search bar and we will be happy to help.<br> After the results apppear click the orange button below the image to view the ingredients and recipe of the drink</p>
             <p>Out of ideas? Press random and it will generate for you a random drink.</p>
-            <h5>FURAHA NI KUKUNYWA NA MARAFIKI</h5>
+            <h5>FURAHA!!!  NI KUKUNYWA NA MARAFIKI</h5>
             </div>
             <img src="/app/images/line1.png" alt="boundary between nav and search">
         </div>    
 
         <!-- search section -->
-        <div class="row navsearchrow">
+        <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-1"></div>
             <div class="col-md-4">
                 <br><br>
                 <form id="searchform">
-                    <input id="name" class="search_bar" type="text" placeholder="Search your alcohol here.." name="search">
+                    <input id="name" class="search_bar" type="text" placeholder="Search your drink here..." name="search">
                     <button id= "searchbtn" type="submit"><i class="fa fa-search"></i></button>
                 </form>
                 <br>
@@ -123,5 +130,7 @@
     </div>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- bootstrap4 -->
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-switch-button@1.1.0/dist/bootstrap-switch-button.min.js"></script>
 </body>
 </html>

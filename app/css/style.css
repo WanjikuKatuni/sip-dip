@@ -70,13 +70,37 @@
     font-weight: 600;
     font-size: 20px;
 }
-.navsearchrow {
+.lightMode {
     background-color: #FCE9D4;
+    transition: ease .3s;
+
 }
-[data-theme="dark"] {
-    --background-color: #3F3F3F;
-    --text-color: #fff;
+.darkMode {
+    background-color: black;
+    transition: ease .3s;
+    color: #ffffff;
+ }
+ #darkModeSwitch input[type="checkbox"] {
+    width: 40px;
+    height: 20px;
+    background: #fff89d;
   }
+  
+  #darkModeSwitch input:checked[type="checkbox"] {
+    background: #757575;
+  }
+  
+  #darkModeSwitch input[type="checkbox"]:before {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+  }
+  
+  #darkModeSwitch input:checked[type="checkbox"]:before {
+    background: #000;
+  }
+  
+
 #welcometxt{
     text-align: center;
 }

@@ -193,12 +193,21 @@ document.querySelector('#searchform').addEventListener('submit', getCocktailInfo
 document.querySelector('#randombtn').addEventListener('click', getRandom)
 
 //dark and light mode event listener
-document.addEventListener('keydown', event => {
-    if ( event.key == " " || event.code == 'Space' || event.keyCode == 32  ) {
-      console.log('Space pressed')
-    //   document.documentElement.setAttribute("data-theme", "dark");
-    }
-    
-  })
+const darkModeSwitch = document.getElementById('darkModeSwitch');
+const body = document.getElementById('body');
+
+//Dark Mode
+darkModeSwitch.addEventListener('change', () => {
+    // console.log('swtich working')
+
+  let currentBodyClass = body.className;
+
+  if (body.className == "lightMode") {
+    body.className = "darkMode";
+  } 
+  else if (currentBodyClass == "darkMode") {
+    body.className = "lightMode";
+  }
+});
 
 
